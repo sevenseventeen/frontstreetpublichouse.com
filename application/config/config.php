@@ -14,7 +14,19 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['server_name'] = $_SERVER['SERVER_NAME'];
+
+switch ($config['server_name']) {
+	case 'localhost':
+		$config['base_url'] = 'http://localhost/development/frontstreetpublichouse.com/';
+		break;
+	case 'frontstreetpublichouse.com':
+		$config['base_url']	= 'http://frontstreetpublichouse.com/';
+		break;
+	case 'www.frontstreetpublichouse.com':
+		$config['base_url']	= 'http://www.frontstreetpublichouse.com/';
+		break;
+}
 
 /*
 |--------------------------------------------------------------------------

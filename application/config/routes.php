@@ -38,7 +38,10 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['mailchimp/(:any)'] = "mailchimp_controller/$1";
+$route['mailchimp'] = "mailchimp_controller";
+$route['default_controller'] = "main_controller";
+$route['(:any)'] = "main_controller/$1";
 $route['404_override'] = '';
 
 
