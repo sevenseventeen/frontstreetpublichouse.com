@@ -163,6 +163,7 @@ strong {
     -khtml-border-radius: 5px;
     border-radius: 5px;
     behavior: url(/_pie.htc);
+    z-index: 100;
 }
 
 .drop_shadow_1 {
