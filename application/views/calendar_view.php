@@ -1,8 +1,8 @@
 <?php  
 
 include '_includes/head.php'; 
-require_once 'google-api-php-client/src/Google_Client.php';
-require_once 'google-api-php-client/src/contrib/Google_CalendarService.php';
+require_once '_api_google/src/Google_Client.php';
+require_once '_api_google/src/contrib/Google_CalendarService.php';
 
 $google_client = new Google_Client();
 $service = new Google_CalendarService($google_client);
